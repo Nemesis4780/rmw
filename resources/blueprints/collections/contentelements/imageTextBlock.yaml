@@ -1,0 +1,126 @@
+title: 'Image Text Block'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: type
+            field:
+              input_type: text
+              default: 'Image Text Block'
+              antlers: false
+              type: text
+              display: Type
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: hidden
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: title
+            field:
+              type: text
+              validate:
+                - required
+              display: 'Title (intern)'
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              input_type: text
+              antlers: false
+              hide_display: false
+          -
+            handle: heading
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Heading
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: text
+            field:
+              restrict: false
+              buttons:
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - quote
+                - link
+                - image
+                - table
+              automatic_line_breaks: true
+              automatic_links: false
+              escape_markup: false
+              heading_anchors: false
+              smartypants: false
+              table_of_contents: false
+              antlers: false
+              type: markdown
+              display: Text
+              icon: markdown
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+      -
+        display: Images
+        fields:
+          -
+            handle: images
+            field:
+              max_files: 3
+              min_files: 1
+              mode: list
+              restrict: true
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: Images
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              container: images
+      -
+        display: Buttons
+        fields:
+          -
+            import: links
+  settings:
+    display: Settings
+    sections:
+      -
+        display: Setting
+        fields:
+          -
+            handle: style
+            field: style.style
+            config:
+              width: 50
+          -
+            import: order
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true

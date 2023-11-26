@@ -1,0 +1,42 @@
+<!doctype html>
+<!-- Dark mode enabled -->
+{{# <html lang="en" class="dark"> #}}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>{{ title }}  | {{ site_name }}</title>
+
+    <meta name="description" content="{{ seo_description }}" />
+    <meta name="keywords" content="{{ seo_keywords }}" />
+    <meta name="robots" content="{{ if seo_index != 1 }}no{{ /if }}index, {{ if seo_follow != 1 }}no{{ /if }}follow">
+
+    {{ partial:partials/globals }}
+
+    {{ vite src="resources/js/app.js|resources/css/app.css" }}
+
+</head>
+{{# <body class="dark:bg-[#111826]"> #}}
+<body>
+
+    {{ partial:nav }}
+
+    <div class="min-h-screen flex flex-col">
+
+        {{ template_content }}
+
+        <div class="mt-auto">
+            {{ partial:partials/footer}}
+        </div>
+    </div>
+
+
+    <style lang="scss">
+
+    </style>
+
+</body>
+</html>

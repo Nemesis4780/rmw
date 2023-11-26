@@ -1,0 +1,11 @@
+<div class="content-element-wrapper flex flex-col">
+    {{ if contentElements }}
+        {{ contentElements }}
+            {{ if {partial:exists src="/contentElements/{blueprint}" } }}
+                {{ partial src='/contentElements/{blueprint}' id="{id}" }}
+            {{ else }}
+                {{ partial:partials/missingPartial }}
+            {{ /if }}
+        {{ /contentElements }}
+    {{ /if }}
+</div>

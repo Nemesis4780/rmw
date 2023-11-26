@@ -1,0 +1,24 @@
+{{# <img srcset=" #}}
+{{#     {{ glide:image preset='xs-webp' }} 320w, #}}
+{{#     {{ glide:image preset='sm-webp' }} 480w, #}}
+{{#     {{ glide:image preset='md-webp' }} 768w, #}}
+{{#     {{ glide:image preset='lg-webp' }} 1280w, #}}
+{{#     {{ glide:image preset='xl-webp' }} 1440w, #}}
+{{#     {{ glide:image preset='2xl-webp' }} 1680w" #}}
+{{#     sizes="{{ sizes }}" #}}
+{{#     type="image/webp" #}}
+{{# > #}}
+
+
+<img srcset='
+    {{ glide src="{image}" w="320" }} 320w,
+    {{ glide src="{image}" w="480" }} 480w,
+    {{ glide src="{image}" w="768" }} 768w,
+    {{ glide src="{image}" w="1280" }} 1280w,
+    {{ glide src="{image}" w="1440" }} 1440w,
+    {{ glide src="{image}" w="1680" }} 1680w'
+    sizes="{{ sizes }}"
+    type="image/webp"
+>
+
+

@@ -1,0 +1,88 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              validate:
+                - required
+              display: 'Title (intern)'
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              input_type: text
+              antlers: false
+              hide_display: false
+          -
+            handle: heading
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Heading
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: content
+            field:
+              type: markdown
+              localizable: true
+  content:
+    display: Content
+    sections:
+      -
+        display: Content
+        fields:
+          -
+            handle: contentElements
+            field:
+              mode: default
+              create: true
+              type: entries
+              display: 'Content Elements'
+              icon: entries
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              collections:
+                - contentelements
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - landingpages
+              max_items: 1
+              listable: false
+              localizable: true
+  seo:
+    display: SEO
+    sections:
+      -
+        display: SEO
+        fields:
+          -
+            import: seo_
+            prefix: seo_
+title: Page

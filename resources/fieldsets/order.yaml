@@ -1,0 +1,26 @@
+title: Order
+fields:
+  -
+    handle: order
+    field:
+      options:
+        order-default: Default
+        order-reverse: Reverse
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: order-default
+      type: select
+      display: Order
+      icon: select
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      validate:
+        - required
+      width: 50

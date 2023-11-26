@@ -1,0 +1,172 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: primary
+            field:
+              allow_any: true
+              default: '#007bff'
+              type: color
+              display: Primary
+              icon: color
+              width: 25
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: secondary
+            field:
+              allow_any: true
+              default: '#6c757d'
+              type: color
+              display: Secondary
+              icon: color
+              width: 25
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: tertiary
+            field:
+              allow_any: true
+              type: color
+              display: Tertiary
+              icon: color
+              width: 25
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+      -
+        display: Forms
+        fields:
+          -
+            handle: success
+            field:
+              allow_any: true
+              default: 28a745
+              type: color
+              display: Success
+              icon: color
+              width: 25
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: danger
+            field:
+              allow_any: true
+              default: '#dc3545'
+              type: color
+              display: Danger
+              icon: color
+              width: 25
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: warning
+            field:
+              allow_any: true
+              default: '#ffc107'
+              type: color
+              display: Warning
+              icon: color
+              width: 25
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: info
+            field:
+              allow_any: true
+              default: '#17a2b8'
+              type: color
+              display: Info
+              icon: color
+              width: 25
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+      -
+        display: 'Light and Dark'
+        fields:
+          -
+            handle: light
+            field:
+              allow_any: true
+              default: '#f8f9fa'
+              type: color
+              display: Light
+              icon: color
+              width: 25
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: dark
+            field:
+              allow_any: true
+              default: '#343a40'
+              type: color
+              display: Dark
+              icon: color
+              width: 25
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: white
+            field:
+              allow_any: true
+              default: '#fff'
+              type: color
+              display: White
+              icon: color
+              width: 25
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  styles:
+    display: Styles
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: styles
+            field:
+              mode: default
+              create: true
+              collections:
+                - styles
+              type: entries
+              display: styles
+              icon: entries
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false

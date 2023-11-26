@@ -1,0 +1,28 @@
+title: 'Product Color'
+fields:
+  -
+    handle: color
+    field:
+      swatches:
+        - '#cb511e'
+        - '#a13024'
+        - '#7a8073'
+        - '#58181c'
+        - '#80773f'
+        - '#225459'
+        - '#3a5b70'
+        - '#8f937c'
+        - '#b2aea9'
+        - '#acc0b7'
+        - '#756458'
+        - '#392f31'
+      allow_any: true
+      type: color
+      display: Color
+      icon: color
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      width: 33

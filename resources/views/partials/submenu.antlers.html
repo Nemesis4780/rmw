@@ -1,0 +1,68 @@
+<div class="flex gap-4">
+
+    {{ get_content from="/produkt/{parent:slug}-highlights" }}
+        {{ if productCategory === 'highlights' }}
+            {{ partial src="/partials/submenuItem"
+                title="Highlights"
+                image="/img/submenu/highlights.svg"
+                imageHover="/img/submenu/highlights_hover.svg"
+                url="/produkt/{parent:slug}/highlights"
+            }}
+        {{/if}}
+    {{ /get_content }}
+
+    {{ get_content from="/produkt/{parent:slug}-wohnen" }}
+        {{ if productCategory === 'wohnen' }}
+            {{ partial src="/partials/submenuItem"
+                title="Wohnen"
+                image="/img/submenu/wohnen.svg"
+                imageHover="/img/submenu/wohnen_hover.svg"
+                url="/produkt/{parent:slug}/wohnen"
+            }}
+        {{/if}}
+    {{ /get_content }}
+
+    {{ get_content from="/produkt/{parent:slug}-speisen" }}
+        {{ if productCategory === 'speisen' }}
+            {{ partial src="/partials/submenuItem"
+                title="Speisen"
+                image="/img/submenu/speisen.svg"
+                imageHover="/img/submenu/speisen_hover.svg"
+                url="/produkt/{parent:slug}/speisen"
+            }}
+        {{/if}}
+    {{ /get_content }}
+
+    {{ get_content from="/produkt/{parent:slug}-garderoben" }}
+        {{ if productCategory === 'garderoben' }}
+            {{ partial src="/partials/submenuItem"
+                title="Garderoben"
+                image="/img/submenu/garderobe.svg"
+                imageHover="/img/submenu/garderobe_hover.svg"
+                url="/produkt/{parent:slug}/garderoben"
+            }}
+        {{/if}}
+    {{ /get_content }}
+
+    {{ get_content from="/produkt/{parent:slug}-buero" }}
+        {{ if productCategory === 'buero' }}
+            {{ partial src="/partials/submenuItem"
+                title="Büro"
+                image="/img/submenu/buero.svg"
+                imageHover="/img/submenu/buero_hover.svg"
+                url="/produkt/{parent:slug}/buero"
+            }}
+        {{/if}}
+    {{ /get_content }}
+
+    {{ get_content from="/produkt/{parent:slug}-schlafen" }}
+        {{ if productCategory === 'schlafen' }}
+            {{ partial src="/partials/submenuItem"
+                title="Schlafen"
+                image="/img/submenu/schlafen.svg"
+                imageHover="/img/submenu/schlafen_hover.svg"
+                url="/produkt/{parent:slug}/schlafen"
+            }}
+        {{/if}}
+    {{ /get_content }}
+</div>

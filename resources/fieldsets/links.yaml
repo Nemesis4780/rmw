@@ -1,0 +1,58 @@
+title: Links
+fields:
+  -
+    handle: links
+    field:
+      fields:
+        -
+          handle: link_url
+          field:
+            input_type: url
+            antlers: false
+            type: text
+            display: url
+            icon: text
+            width: 33
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            replicator_preview: true
+            hide_display: false
+        -
+          handle: link_title
+          field:
+            input_type: text
+            antlers: false
+            type: text
+            display: Title
+            icon: text
+            width: 33
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            replicator_preview: true
+            hide_display: false
+        -
+          handle: link_blank
+          field:
+            default: false
+            type: toggle
+            display: 'Open in new tab'
+            icon: toggle
+            width: 33
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            replicator_preview: true
+            hide_display: false
+      mode: table
+      reorderable: true
+      fullscreen: true
+      type: grid
+      display: Links
+      icon: grid
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false

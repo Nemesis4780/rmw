@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* TYPOGRAPY */
+.h1 {
+    @apply text-[44.3667px] leading-[46.4464px] font-bold;
+}
+.h2 {
+    @apply text-2xl font-semibold;
+}
+.h3 {
+    @apply text-xl font-semibold;
+}
+.h6 {
+    @apply text-[29.0411px] leading-[34.5354px];
+}
+
+
+body {
+    @apply !bg-[#f0f0f7];
+}
+
+/* NAVIGATION */
+.submenu.is-shrinked .icon {
+}
+nav.navbar .active {
+    @apply bg-[#d19800] !text-white;
+}
+
+/* COMPONENTS */
+.btn {
+    @apply inline-block border border-[2px] py-[9px] px-[16px] text-[25px];
+}
+
+
+/* STYLE DEFAULT */
+.style-default {
+    @apply text-[#2D2D34] bg-[#F0F0F7];
+}
+.style-default a {
+    @apply text-[#d19800];
+}
+.style-default .btn {
+    @apply border-[#2d2d34] hover:border-[#d19c00] text-[#2d2d34] hover:text-[#d19c00];
+}
+
+/* STLYE LIGHT */
+.style-light {
+    @apply text-[#2D2D34] bg-[#F0F0F7];
+}
+.style-light a {
+    @apply text-[#d19800];
+}
+.style-light .btn {
+    @apply border-[#2d2d34] hover:border-[#d19c00] text-[#2d2d34] hover:text-[#d19c00];
+}
+
+/* STYLE DARK */
+.style-dark {
+    @apply text-[#dcdce3] bg-[#1e1e25];
+}
+.style-dark a {
+    @apply text-[#d19800] hover:text-[#d7a025];
+}
+.style-dark .btn {
+    @apply border-[#dcdce3] hover:border-[#d19c00] text-[#dcdce3] hover:text-[#d19c00];
+}
+
+/* STLYE White */
+.style-white {
+    @apply text-[#2D2D34] bg-[#FFFFFF];
+}
+.style-white a {
+    @apply text-[#d19800];
+}
+.style-white .btn {
+    @apply border-[#2d2d34] hover:border-[#d19c00] text-[#2d2d34] hover:text-[#d19c00];
+}
+
+/* CONTENT ELEMENTS */
+.content-element p {
+    @apply mb-4;
+}
+
+

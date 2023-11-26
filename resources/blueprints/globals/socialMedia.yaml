@@ -1,0 +1,45 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: facebook
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Facebook
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: twitter
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Twitter
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: instagram
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Instagram
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false

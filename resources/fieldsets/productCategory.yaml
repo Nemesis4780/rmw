@@ -1,0 +1,27 @@
+title: 'Product Category'
+fields:
+  -
+    handle: productCategory
+    field:
+      options:
+        none: keine
+        highlights: Highlights
+        wohnen: Wohnen
+        speisen: Speisen
+        garderobe: Garderobe
+        buero: Büro
+        schlafen: Schlafen
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      type: select
+      display: 'Product Category'
+      icon: select
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false

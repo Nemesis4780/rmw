@@ -1,0 +1,31 @@
+title: 'Product Group'
+fields:
+  -
+    handle: productGroup
+    field:
+      options:
+        deviso: Deviso
+        concetto: Concetto
+        harmony: Harmony
+        siena: Siena
+        enjoy: Enjoy
+        lavita: Lavita
+        bristol: Bristol
+        allegro: Allegro
+        dacapo: Dacapo
+        cento: Cento
+        opus: Opus
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      type: select
+      display: 'Product Group'
+      icon: select
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false

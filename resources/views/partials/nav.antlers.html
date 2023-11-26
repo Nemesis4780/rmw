@@ -1,0 +1,30 @@
+<nav class="navbar py-4 style-default">
+    <div class="max-w-4xl mx-auto">
+        <div class="flex items-center justify-between flex-col md:flex-row">
+            <img src="/img/logo/rmw_kompakt_sRGB.svg" class="max-w-[200px]">
+
+            <ul class="flex flex-wrap gap-4">
+                {{ nav:collection:landingpages }}
+                    <li>
+                        <a href="{{ url }}" class="p-2 block {{ is_current || is_parent ?= 'active'}} ">
+                            {{ title }}
+                        </a>
+                    </li>
+                {{ /nav:collection:landingpages }}
+            </ul>
+        </div>
+
+{{#     <ul class="bg-black text-white px-4 flex items-center space-x-8"> #}}
+{{#         {{ nav:collection:landingpages :from="segment_1" }} #}}
+{{#             {{ if no_results }} #}}
+{{#                 <li class="w-full h-2 bg-black"></li> #}}
+{{#             {{ else }} #}}
+{{#                 <li> #}}
+{{#                     <a href="{{ url }}" class="py-2 block"> {{ title }}</a> #}}
+{{#                 </li> #}}
+{{#             {{ /if }} #}}
+{{#         {{ /nav:collection:landingpages }} #}}
+{{#     </ul> #}}
+    </div>
+
+</nav>

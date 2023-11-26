@@ -1,0 +1,34 @@
+{{ get_content :from="{id}" }}
+<section class="content-element content-element-counter {{ style }}">
+    <div class="flex flex-col {{ if order === 'order-reverse' }} lg:flex-row-reverse {{else}} lg:flex-row {{/if}}">
+        <div class="basis-1/3 p-4">
+            {{ partial src="/partials/header" heading="{heading}" }}
+        </div>
+        <div class="basis-2/3 p-4">
+            <div class="lg: w-1/2">
+                {{ table }}
+                    {{ if last }}
+                        <hr class="border-b border-b-[2px] border-b-white my-4 px-10">
+                    {{ /if }}
+
+                    <div class="flex gap-4 items-center">
+                        {{ cells }}
+                            <div class="flex-1
+                                {{if first}} text-right {{elseif last }} text-left {{/if}}
+                                ">
+                                {{if value | is_numeric}}
+                                    <span class="counter text-[50px]" data-value="{{value}}">0</span>
+                                {{ else }}
+                                    <span class="text-[25px]">{{ value | markdown }}</span>
+                                {{/if}}
+                            </div>
+                        {{ /cells }}
+                    </div>
+                {{ /table }}
+            </div>
+        </div>
+
+    </div>
+
+</section>
+{{ /get_content }}

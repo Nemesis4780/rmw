@@ -1,0 +1,79 @@
+title: Counter
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: type
+            field:
+              input_type: text
+              default: Counter
+              antlers: false
+              type: text
+              display: Type
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: title
+            field:
+              type: text
+              validate:
+                - required
+              display: 'Title (intern)'
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              input_type: text
+              antlers: false
+              hide_display: false
+          -
+            handle: heading
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Heading
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: table
+            field:
+              type: table
+              display: Table
+              icon: table
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  settings:
+    display: Settings
+    sections:
+      -
+        display: Settings
+        fields:
+          -
+            import: style
+          -
+            import: order
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true

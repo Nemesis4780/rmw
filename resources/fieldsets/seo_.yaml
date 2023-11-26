@@ -1,0 +1,66 @@
+title: SEO
+fields:
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: Title
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: description
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: Description
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: keywords
+    field:
+      antlers: false
+      type: textarea
+      display: Keywords
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: index
+    field:
+      default: false
+      type: toggle
+      display: Index
+      icon: toggle
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: follow
+    field:
+      default: false
+      type: toggle
+      display: Follow
+      icon: toggle
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false

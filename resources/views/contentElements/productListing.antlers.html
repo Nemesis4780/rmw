@@ -1,0 +1,31 @@
+{{ get_content :from="{id}" }}
+
+<section class="content-element content-element-product-listing {{ style }}" {{ if (style == "style-default") }} style="background-color: {{ color }}" {{ /if }}>
+
+    {{ nav:collection:products }}
+        {{ if children }}
+            <div class="flex flex-col {{ if order === 'order-reverse' }} lg:flex-row-reverse {{else}} lg:flex-row {{/if}}">
+                <div class="basis-1/3 relative" style="background-color: {{ color }}">
+                    {{ if outline }}
+                        <img src="{{ glide src="{outline}" }}" alt="" class="object-cover object-center w-full h-full absolute opacity-20">
+                    {{ /if }}
+                    <div class="p-10 flex flex-col gap-4 sticky top-0">
+                        <h2 class="h2 text-white">{{ heading }}</h2>
+                        <div>{{ text }}</div>
+                    </div>
+                </div>
+                <div class="basis-2/3">
+                    <div class="products-wrapper flex flex-col gap-4 p-4">
+                        <div class="flex flex-wrap">
+                            {{ children }}
+                                {{ partial src="/partials/productCard" }}
+                            {{ /children }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{ /if }}
+    {{ /nav:collection:products }}
+
+</section>
+{{ /get_content }}

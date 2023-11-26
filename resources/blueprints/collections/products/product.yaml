@@ -1,0 +1,187 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              validate:
+                - required
+              display: 'Title (intern)'
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              input_type: text
+              antlers: false
+              hide_display: false
+          -
+            handle: heading
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Heading
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: shortText
+            field:
+              antlers: false
+              type: textarea
+              display: 'Short Text'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: text
+            field:
+              type: markdown
+              localizable: true
+              display: Text
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              restrict: false
+              buttons:
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - quote
+                - link
+                - image
+                - table
+              automatic_line_breaks: true
+              automatic_links: false
+              escape_markup: false
+              heading_anchors: false
+              smartypants: false
+              table_of_contents: false
+              antlers: false
+              hide_display: false
+      -
+        display: Images
+        fields:
+          -
+            handle: thumbnail
+            field:
+              mode: list
+              container: images
+              restrict: true
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: Thumbnail
+              icon: assets
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              max_files: 1
+          -
+            import: productcolor
+          -
+            handle: image
+            field:
+              mode: list
+              container: images
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: Image
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              width: 50
+              max_files: 1
+          -
+            handle: outline
+            field:
+              mode: list
+              container: images
+              restrict: true
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: Outline
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              width: 50
+              max_files: 1
+  content:
+    display: Content
+    sections:
+      -
+        display: Content
+        fields:
+          -
+            handle: contentElements
+            field:
+              mode: default
+              create: true
+              collections:
+                - contentelements
+              type: entries
+              display: 'Content Elements'
+              icon: entries
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  seo:
+    display: SEO
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            import: seo_
+            prefix: seo_
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - products
+              max_items: 1
+              listable: false
+              localizable: true
+          -
+            import: productCategory
+title: 🛒Product

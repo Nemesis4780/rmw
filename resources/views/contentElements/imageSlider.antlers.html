@@ -1,0 +1,19 @@
+{{ get_content :from="{id}" }}
+
+<section class="content-element content-element-image-slider {{ style }}">
+    <div class="flex flex-col">
+        <div id="image-slider-{{ index }}">
+            {{ images }}
+                <div class="image-slider-element {{if index != 0}} hidden {{/if}}" data-index="{{ index }}">
+                    {{ partial src="/partials/responsiveImage" image="{ images.{index} }"}}
+                </div>
+
+            {{ /images }}
+        </div>
+
+        {{ images.length }}
+        <div class="container mx-auto py-4">
+            <input class="image-slider-controller w-full" type="range" value="0" min="0" step="1" max="{{ { images | length} - 1 }}"  data-target="#image-slider-{{ index }}">
+        </div>
+    </div>
+</section>

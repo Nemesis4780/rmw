@@ -1,0 +1,19 @@
+{{ get_content :from="{id}" }}
+    <section class="content-element content-element-download {{ style }}">
+        <div class="flex flex-col  {{ if order === 'order-reverse' }} lg:flex-row-reverse {{else}} lg:flex-row {{/if}}">
+            <div class="basis-1/3 p-4">
+                {{ partial src="/partials/header" heading="{heading}" }}
+            </div>
+            <div class="basis-2/3 p-4">
+                <div class="flex flex-col gap-4">
+                    <div class="flex flex-wrap gap-4">
+                        {{ documents }}
+                            {{ partial src="/partials/download"  id="{id}" }}
+                        {{ /documents }}
+                    </div>
+                    {{ partial src="/partials/links" heading="{heading}" }}
+                </div>
+            </div>
+        </div>
+    </section>
+{{ /get_content }}

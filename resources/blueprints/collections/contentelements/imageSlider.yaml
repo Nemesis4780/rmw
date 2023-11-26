@@ -1,0 +1,70 @@
+title: 'Image Slider'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              validate:
+                - required
+              display: 'Title (intern)'
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              input_type: text
+              antlers: false
+              hide_display: false
+          -
+            handle: type
+            field:
+              input_type: text
+              default: 'Image Slider'
+              antlers: false
+              type: text
+              display: Type
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: hidden
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: images
+            field:
+              mode: list
+              restrict: true
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: images
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              container: images
+  settings:
+    display: Settings
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            import: style
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true

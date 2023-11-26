@@ -1,0 +1,18 @@
+{{ get_content :from="{id}" }}
+
+<a href="/storage/files/{{ file.0.path }}" class="inline-block group">
+    <div class="flex flex-col items-center">
+        <img src="{{ glide src="{image.0}" w="128" }}" class="border border-[1px] border-black">
+        <div class="relative">
+            <div class="circle left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 absolute bg-[#d09929] rounded-full w-[40px] h-[40px] group-hover:bg-[#2d2d35]"></div>
+            <div class="uppercase relative my-5 flex flex-col justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-4 h-4">
+                    <path fill="white" d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+                </svg>
+                <div class="text-white text-xs ">
+                    {{  file.0.path | trim | substr(-3) }}
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
