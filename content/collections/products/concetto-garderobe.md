@@ -12,5 +12,6 @@ color: '#a13024'
 seo_index: false
 seo_follow: false
 updated_by: 1
-updated_at: 1700957427
+updated_at: 1701000831
+productCategory: garderobe
 ---

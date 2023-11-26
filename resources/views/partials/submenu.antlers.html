@@ -33,13 +33,13 @@
         {{/if}}
     {{ /get_content }}
 
-    {{ get_content from="/produkt/{parent:slug}-garderoben" }}
-        {{ if productCategory === 'garderoben' }}
+    {{ get_content from="/produkt/{parent:slug}-garderobe" }}
+        {{ if productCategory === 'garderobe' }}
             {{ partial src="/partials/submenuItem"
-                title="Garderoben"
+                title="Garderobe"
                 image="/img/submenu/garderobe.svg"
                 imageHover="/img/submenu/garderobe_hover.svg"
-                url="/produkt/{parent:slug}/garderoben"
+                url="/produkt/{parent:slug}/garderobe"
             }}
         {{/if}}
     {{ /get_content }}
